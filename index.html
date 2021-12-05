@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/less">
+        body {
+        margin: 0;
+        font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    }
         * {
             background-color: rgba(0,0,0,0.02);
             box-shadow: 0 0 1px red;
@@ -17,10 +21,37 @@
         }
         div.header {
         header {
+            
             background-color: #333;
             > nav.service {
+                background-color: #333;
+                font-size: 12px;
                 width: 1226px;
                 margin: auto;
+                a {
+                    xdisplay: inline-block;
+                    color:#b0b0b0;
+                    line-height:40px;
+                }
+                span.sep {
+                    color: #424242;
+                    margin: 0 0.3em;
+                }
+                div.top-right-menu {
+                    float: right;
+                    div.shopping-cart {
+                        float: right;
+                        background-color: #424242;
+                        width:120px;
+                        margin-left:25px;
+                        a {
+                            width:120px;
+                            text-align: center;
+                            display: inline-block;
+                        }
+                    }
+                    
+                }
             }
         }
     }
@@ -30,32 +61,45 @@
     <div class="header">
         <header class="top-menu">
             <nav class="service">
-                 <span>小米商城 </span>
-                 <span class="sep">|</span>
-                 <span>MIUI </span>
-                 <span class="sep">|</span>
-                 <span>IoT </span>
-                 <span class="sep">|</span>
-                 <span>云服务 </span>
-                 <span class="sep">|</span>
-                 <span>天星数科 </span>
-                 <span class="sep">|</span>
-                 <span>有品 </span>
-                 <span class="sep">|</span>
-                 <span>小爱开放平台 </span>
-                 <span class="sep">|</span>
-                 <span>企业团购 </span>
-                 <span class="sep">|</span>
-                 <span>资质证照 </span>
-                 <span class="sep">|</span>
-                 <span>协议规则 </span>
-                 <span class="sep">|</span>
-                 <span>下载app </span>
-                 <span class="sep">|</span>
-                 <span>智能生活 </span>
-                 <span class="sep">|</span>
-                 <span>Select Location</span>
-                 <span class="sep">|</span>
+                 <a><span>小米商城 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>MIUI </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>IoT </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>云服务 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>天星数科 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>有品 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>小爱开放平台 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>企业团购 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>资质证照 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>协议规则 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>下载app </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>智能生活 </span></a> 
+                 <span class = "sep">|</span>
+                 <a><span>Select Location</span></a> 
+                 <div class="top-right-menu">
+                 <!-- <div class="site-user-info"> -->
+                    <a><span>登录</span></a> 
+                    <span class="sep">|</span>
+                    <a><span>注册</span></a> 
+                    <span class="sep">|</span>
+                    <a><span>消息通知</span></a> 
+                    
+                 <!-- </div> -->
+                 <div class="shopping-cart">
+                     <a href="">购物车(0)</a>
+                     <div></div>
+                 </div>
+                </div>
             </nav>
         </header>
     </div>
