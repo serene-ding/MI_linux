@@ -353,11 +353,14 @@
                     height: 420px;
                     padding:20px 0;
                     background-color: rgba(105,101,101,.6);
-                    li {
+                    li.category-item {
                         height: 42px;
                         line-height: 42px;
                         padding-left:30px;
-                        em{ 
+                        &:hover div {
+                            display:block;
+                        }
+                        em { 
                             font-family: MIFont!important;
                             font-style:normal;
                             font-size:16px;
@@ -365,6 +368,53 @@
                             right:20px;
                             &:before {
                             content: '\E623';
+                            }
+                        }
+                        div {
+                            display: none;
+                            position: absolute;
+                            z-index:300;
+                            top:0;
+                            left:233px;
+                            xdisplay: flex;
+                           
+                            border:1px solid #e0e0e0;
+                            border-left:none;
+                            &.col-3 {
+                                width: 795px;
+                            }
+                            
+                            
+                            ul.children-list {
+                               
+                                background-color: #fff;
+                                float:left;
+                                width: 265px;
+                                height:456px;
+                                padding:2px 0;
+                                float:left;
+                                li.children-list-item {
+                                    width: 100%;
+                                    height:76px;
+                                    a {
+                                        display:block;
+                                        height: 40px;
+                                        width:225px;
+                                        padding:18px 20px;
+                                        color:#333;
+                                        
+                                        img {
+                                            float:left;
+                                            height: 40px;
+                                            
+                                            margin-right:12px;
+                                        }
+                                        span {
+                                            float:left;
+                                            line-height:40px;
+                                        }
+                                    }
+                                }
                             }
                         }
                         &:hover {
@@ -557,46 +607,166 @@
         </div>
         <div class="side-menu">
             <ul class="product-list">
-                <li>
+                <li class="category-item">
                     手机
                     <em></em>
                     
                     </li>
-                <li>
+                <li class="category-item">
                     电视
                     <em></em>
                     </li>
-                <li>
+                <li class="category-item">
                     笔记本 平板
                     <em></em>
                     </li>
-                <li>
+                <li class="category-item">
                     家电
                     <em></em>
                     </li>
-                <li>
+                <li class="category-item">
                     出行 穿戴
                     <em></em>
                     </li>
-                <li>
+                <li class="category-item">
                     智能 路由器
                     <em></em>
                     </li>
-                <li>
+                <li class="category-item">
                     电源 配件
                     <em></em>
                     </li>
-                <li>
+                <li class="category-item">
                     健康 儿童
                     <em></em>
                     </li>
-                <li>
+                <li class="category-item">
                     耳机 音箱
                     <em></em>
                     </li>
-                <li>
-                    笔记本 平板
+                <li class="category-item">
+                    生活 箱包
                     <em></em>
+                    <div class="children-list-container col-3">
+                       <ul class="children-list col1">
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f26030d7d914b86daca51233a3ac5f9.jpg?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>小背包</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f26030d7d914b86daca51233a3ac5f9.jpg?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>小背包</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f26030d7d914b86daca51233a3ac5f9.jpg?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>小背包</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f26030d7d914b86daca51233a3ac5f9.jpg?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>小背包</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f26030d7d914b86daca51233a3ac5f9.jpg?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>小背包</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9f26030d7d914b86daca51233a3ac5f9.jpg?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>小背包</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="children-list col2">
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/744306b95df4d130bdfc346ff2b3c871.png?thumb=1&w=80&h=80" alt="">
+                                    <span>枕头</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/744306b95df4d130bdfc346ff2b3c871.png?thumb=1&w=80&h=80" alt="">
+                                    <span>枕头</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/744306b95df4d130bdfc346ff2b3c871.png?thumb=1&w=80&h=80" alt="">
+                                    <span>枕头</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/744306b95df4d130bdfc346ff2b3c871.png?thumb=1&w=80&h=80" alt="">
+                                    <span>枕头</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/744306b95df4d130bdfc346ff2b3c871.png?thumb=1&w=80&h=80" alt="">
+                                    <span>枕头</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/744306b95df4d130bdfc346ff2b3c871.png?thumb=1&w=80&h=80" alt="">
+                                    <span>枕头</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        
+                        <ul class="children-list col3">
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ac95ad25bb8f6391abcb937b03c1743.png?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>米兔</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ac95ad25bb8f6391abcb937b03c1743.png?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>米兔</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ac95ad25bb8f6391abcb937b03c1743.png?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>米兔</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ac95ad25bb8f6391abcb937b03c1743.png?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>米兔</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ac95ad25bb8f6391abcb937b03c1743.png?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>米兔</span>
+                                </a>
+                            </li>
+                            <li class="children-list-item">
+                                <a href="">
+                                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ac95ad25bb8f6391abcb937b03c1743.png?thumb=1&w=80&h=80&f=webp&q=90" alt="">
+                                    <span>米兔</span>
+                                </a>
+                            </li> 
+
+                        </ul>
+                    </div>
                     </li>
             </ul>
         </div>
